@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Oppa {% endblock %}</h1>
+<div class="container" id="messages">
+</div>
+<div class="input-group message-input">
+    <input type="text" class="form-control" id="user-input" name="user-input" placeholder="Say hi!"
+        aria-label="User's input" aria-describedby="message-button">
+    <div class="input-group-append">
+        <button type="button" class="btn btn-dark" id="message-button" onclick=sendMessage()>Send</button>
+    </div>
+</div>
+{% endblock %}
